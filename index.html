@@ -1,0 +1,35 @@
+<div id="app"></div>
+
+<button type="button"
+onclick="document.getElementById('currenttime').innerHTML = Date()">
+Click to display current Date & Time.</button>
+
+<p id="currenttime"></p>
+
+
+<!--Write JS in HTML-->
+<script>
+
+
+
+//ARRAY
+const skills = new Array("HTML", "Angular", "JavaScript");
+document.getElementById("displayskill").innerHTML = skills;
+</script>
+
+<p id="displayskill"></p>
+<p id="greetinghere"></p>
+
+<script>
+//CONDITIONS
+const time = new Date().getHours();
+let greetinghere;
+if (time < 10) {
+  greetinghere = "Good Morning Viewers";
+} else if (time < 20) {
+  greetinghere = "Good Day Viewers";
+} else {
+  greetinghere = "Good Evening Viewers";
+}
+document.getElementById("greetinghere").innerHTML = greetinghere;
+</script>
